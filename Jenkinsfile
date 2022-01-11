@@ -41,7 +41,10 @@ pipeline {
 	                      projectJsonPath: "project.json",
 	                      version: [$class: 'ManualVersionEntry', version: "${MAJOR}.${MINOR}.${env.BUILD_NUMBER}"],
 	                      useOrchestrator: false,
-						  traceLevel: 'None'
+						  traceLoggingLevel: 'None'
+						  //orchestratorAddress: "${UIPATH_ORCH_URL}",
+						  //orchestratorTenant: "${UIPATH_ORCH_TENANT_NAME}",
+						  //credentials: [$class: 'UserPassAuthenticationEntry', credentialsId: “APIUserKey”]
 	        )
 	            }
 	        }
@@ -63,8 +66,8 @@ pipeline {
 	                orchestratorTenant: "${UIPATH_ORCH_TENANT_NAME}",
 	                folderName: "${UIPATH_ORCH_FOLDER_NAME}",
 	                environments: 'DEV',
-	                //credentials: [$class: 'UserPassAuthenticationEntry', credentialsId: 'APIUserKey']
-	                credentials: Token(accountName: "${UIPATH_ORCH_LOGICAL_NAME}", credentialsId: 'APIUserKey'), 
+	                credentials: [$class: 'UserPassAuthenticationEntry', credentialsId: 'APIUserKey']
+	                //credentials: Token(accountName: "${UIPATH_ORCH_LOGICAL_NAME}", credentialsId: 'APIUserKey'), 
 					traceLevel: 'None',
 					entryPointPaths: 'Main.xaml'
 	
