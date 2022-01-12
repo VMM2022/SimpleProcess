@@ -1,6 +1,6 @@
 {
   "name": "SimpleProcess",
-  "description": "CICD Demo Process with Jenkins",
+  "description": "CICD Demo Process with Jenkins 1",
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.9.3]",
