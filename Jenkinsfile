@@ -7,7 +7,7 @@ pipeline {
 	        MAJOR = '1'
 	        MINOR = '0'
 	        //Orchestrator Services
-	        UIPATH_ORCH_URL = "https://rpa-orch-dev.enterprise.afs.com/"
+	        UIPATH_ORCH_URL = "https://https://ec2amaz-u37pvmh/"
 	        UIPATH_ORCH_LOGICAL_NAME = "CICDJenkins"
 	        UIPATH_ORCH_TENANT_NAME = "Default"
 	        UIPATH_ORCH_FOLDER_NAME = "Default"
