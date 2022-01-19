@@ -1,21 +1,23 @@
 {
-  "name": "SimpleProcess",
-  "description": "CICD Demo Process with Jenkins 1",
+  "name": "Simple Process",
+  "description": "Simple Process",
   "main": "Main.xaml",
   "dependencies": {
-    "UiPath.Excel.Activities": "[2.9.3]",
-    "UiPath.Mail.Activities": "[1.9.3]",
-    "UiPath.System.Activities": "[20.10.1]",
-    "UiPath.UIAutomation.Activities": "[20.10.6]"
+    "UiPath.Excel.Activities": "[2.11.4]",
+    "UiPath.Mail.Activities": "[1.12.2]",
+    "UiPath.System.Activities": "[21.10.2]",
+    "UiPath.UIAutomation.Activities": "[21.10.3]"
   },
   "webServices": [],
   "entitiesStores": [],
   "schemaVersion": "4.0",
-  "studioVersion": "20.10.2.0",
-  "projectVersion": "1.0.0",
+  "studioVersion": "21.10.4.0",
+  "projectVersion": "1.0.3",
   "runtimeOptions": {
     "autoDispose": false,
+    "netFrameworkLazyLoading": false,
     "isPausable": true,
+    "isAttended": false,
     "requiresUserInteraction": true,
     "supportsPersistence": false,
     "excludedLoggedData": [
@@ -24,7 +26,8 @@
     ],
     "executionType": "Workflow",
     "readyForPiP": false,
-    "startsInPiP": false
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true
   },
   "designOptions": {
     "projectProfile": "Developement",
@@ -37,18 +40,19 @@
       "ignoredFiles": []
     },
     "fileInfoCollection": [],
-    "modernBehavior": false
+    "modernBehavior": true
   },
-  "expressionLanguage": "VisualBasic",
+  "expressionLanguage": "CSharp",
   "entryPoints": [
     {
       "filePath": "Main.xaml",
-      "uniqueId": "1523008e-b7e5-4ce9-a390-7f9dd3df6004",
+      "uniqueId": "1745b9f8-98d0-4d9f-a4da-e416fb8de64c",
       "input": [],
       "output": []
     }
   ],
   "isTemplate": false,
   "templateProjectData": {},
-  "publishData": {}
+  "publishData": {},
+  "targetFramework": "Legacy"
 }
